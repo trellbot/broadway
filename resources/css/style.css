@@ -15,8 +15,9 @@ h1 {
 }
 ul {
   list-style: none;
+  line-height: 30px;
 }
-
+/* VoiceOver accessibility fix for ul with style: none */
 ul li::before {
   content: "\200B";
 }
@@ -25,4 +26,21 @@ ul li::before {
 a {
   font-size: 18px;
   color: white;
+}
+
+/* subheader styles */
+h2, h3 {
+  font-weight: bold;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 23px;
+}
+
+/* design division style */
+.design {
+  color: white;
+  background-image: url(../images/the-flatiron-building.png);
 }
